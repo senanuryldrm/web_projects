@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SenBank</title>
+  <style>
+body {       /* set the size of the page based on the data in it and sets a border */
+  height:auto;
+  border: 1px solid black;
+}
+
+div {       /* if the div has border, border's do not overflow */
+  box-sizing: border-box;
+}
+
+img {       /* positioning of images */
+    width: 45%;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 2%;
+}
+
+
+.top_box {        /* css codes for the box at the top of the page */
+  border: 1px solid black;
+  height: auto;
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.middle_box {       /* css codes for the box at the middle of the page */
+  border: 1px solid black;
+  display:flex; 
+  height: auto;
+}
+
+.under_box {        /* css code for the box at the bottom of the page */
+  border: 1px solid black;
+  height: auto;
+  display:flex;
+  flex-direction:column;
+  background-color:#d3d3d3;
+  justify-content: space-around;
+}
+
+
+
+.left_part {       /* css code for the left part of the middle box of the page */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   flex:2;
+  background-color:#7f5f42;
+}
+
+.middle_part {        /* css code for the middle part of the middle box of the page(the part where the paragraphs are) */
+  border: 1px solid black;
+  flex:5;
+  background-color: #87CEEB;
+}
+
+.right_part {       /* css code for the right part of the middle box of the page */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex:3;
+  background-color: #7f5f42;
+}
+
+#welc {       /* the part where the welcome writes */
+  border: 1px solid black;
+  height:10vh; 
+  text-align:center; 
+  font-size:25px; 
+  background-color:#191970;
+  color:#FFFFFF;
+}
+
+.left_part_boxes {       /* css codes for the dollar/money boxes(left part) */
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 15px;
+  margin: 15px;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  background-color: #FFFFFF;
+}
+
+.right_part_boxes {       /* css codes for the information boxes(right part) */
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  background-color:#FFFFFF;
+}
+
+.under_box_boxes {        /* css codes for the link boxes (under the page) */
+  height:100px;
+  border: 1px solid grey;
+  padding: 6px;
+  margin: auto;
+  margin-top:20px;
+  align-items:center;
+  flex-wrap: wrap;
+  background-color:#91c9bd;
+  width:25%;
+}
+
+#user {       /* id css for boxes which are in the information boxes(in the right part boxes) */
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 15px;
+  margin: auto;
+  flex-wrap:wrap;
+  margin-top:5px;
+  width:90%;
+}
+  </style>
+</head>
+<body>
+  <div class="top_box">
+    <img src="https://previews.123rf.com/images/lkeskinen/lkeskinen1707/lkeskinen170702356/81520179-cartoon-image-of-bank-icon.-government-symbol.jpg" style="width:100px;height: 100px">
+    <img src="https://media.istockphoto.com/vectors/cartoon-hand-holding-cash-money-vector-id891126690" style="width:100px;height: 100px">
+    <p style="font-size:3em;color:#5F9EA0"><b>SENBANK</b></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjc-b9DderAhxwJiFf2455ukXjyeFFF1RiY6d8kU6TgA-hqdvNCjyVqd19oZveCPVXek&usqp=CAU" style="width:100px;height: 100px">
+    <p style="font-size:20px;"><i>Sizin Bankanız Asla Uyumaz...</i></p>   
+  </div>
+  <div class="middle_box">
+    <div class="left_part">
+      <div class="left_part_boxes">
+        <img src="https://static8.depositphotos.com/1129074/992/v/950/depositphotos_9926411-stock-illustration-dollar-symbol.jpg">
+        <p>18,60 TL</p>
+      </div>
+      <div class="left_part_boxes">
+        <img src="https://thumbs.dreamstime.com/b/ejemplo-d-del-s%C3%ADmbolo-de-moneda-euro-azul-95090178.jpg">
+        <p>18,51 TL</p>
+      </div>
+      <div class="left_part_boxes">
+        <img src="https://www.kindpng.com/picc/m/11-114799_how-to-set-use-pound-coin-icon-svg.png">
+        <p>21,59 TL</p>
+      </div>
+      <div class="left_part_boxes">
+        <img src="https://media.istockphoto.com/vectors/stack-of-coins-with-coin-in-front-of-it-icon-flat-coins-pile-coins-vector-id938687120">
+        <p> 982,87 TL</p>
+      </div>
+      <div class="left_part_boxes">
+        <img src="https://media.istockphoto.com/vectors/japanese-yen-sign-vector-id1207097436">
+        <p>0,13 TL</p>
+      </div>
+      <div class="left_part_boxes">
+        <img src="https://previews.123rf.com/images/blueringmedia/blueringmedia1803/blueringmedia180300289/98990381-%EB%8B%A8%EC%96%B4-%EB%B9%84%ED%8A%B8-%EC%BD%94%EC%9D%B8-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%ED%99%A9%EA%B8%88-%EB%8F%99%EC%A0%84.jpg">
+        <p>385.102,25 TL</p>
+      </div>
+    </div>
+    <div class="middle_part">
+      <div id="welc"> <p><b>WELCOME</b></p></div>
+      <p>
+      <p style="text-align:center;font-size:20px;"><u>Bankacılar Dergisi Hakkında</u></p>
+        <p style="margin:10px;">Bankacılar dergisi, ekonomi, finans, bankacılık
+konularında ve bu konularla ilgili alanlarda
+bilimsel özgün makalelere yer veren hakemli
+bir dergidir. Bankacılar, akademisyenler,
+araştırmacılar, uygulamada yer alan
+profesyoneller ve politika yapıcıları arasındaki
+bilgi paylaşımının artırılmasına, bankacılık
+mesleğinin geliştirilmesine ve literatüre katkıda
+bulunmayı amaçlar. </p>
+      <p style="text-align:center;font-size:20px;"><u>Kredi Nasıl Çekilir</u></p>
+      <p style="margin:10px;;">İhtiyaç kredisi hesaplama işlemi öncelikle almak istediğiniz kredi tutarını belirlemeniz gerekiyor. Bütçe dostu ihtiyaç kredisini bulmak için, çekmek istediğiniz tutar üzerinden aylık taksit miktarına dikkat ederek hesaplama yapmanız gerekiyor. Bireysel ihtiyaç kredisinde maksimum vade 36 ay olarak belirlenmiştir. Çekmek istediğiniz kredi tutarını en fazla 3 yıl vade ile ödeyebilirsiniz.
+
+Vade belirlerken aylık ödemelerinizin kolay olması kadar, sizi zorlamayacak şekilde en hızlı bitireceğiniz süreyi göz önünde bulundurmanız gerekir. Vade uzadıkça aylık taksit oranları daha düşük olsa da toplam geri ödeme miktarı daha fazla olacaktır. Vadeyi, bütçenizi zorlamayacak maksimum aylık ödeme tutarınıza göre belirlemenizde fayda var.
+
+Çekmek istediğiniz vade ve ihtiyaç kredisi tutarı belliyse faiz hesaplama işlemine geçebilirsiniz. Bu noktada hesaplamayı bankaların kendi web sayfaları üzerinden yapabileceğiniz gibi HangiKredi’nin ihtiyaç kredisi hesaplama aracı üzerinden de gerçekleştirebilirsiniz. Hesaplamanızı HangiKredi’den yaparak, çekmek istediğiniz kredi tutarı ve vadeye göre tek seferde hesaplama yaparak 20’den fazla bankanın teklifini tek ekranda görüntüleyebilir, karşılaştırma imkanına erişebilirsiniz.
+
+Tüm bunlara ek olarak bireysel ihtiyaç kredisi hesaplama işlemi yaparken dosya masrafının, kredi tutarının binde 5’i olacağını da aklınızda bulundurmalısınız. Yine de kimi özel kredi ürünlerinde veya bazı bankaların kredi kampanyalarında dosya masrafları tahsis edilmeyebilir. Sıfır dosya masrafı uygulaması tamamen kredi veren bankanın inisiyatifindedir. İhtiyaç kredisi hesaplama işlemi yaparken saydığımız bütün bu noktalara dikkat ederek düşük faizli ihtiyaç kredisi seçeneğine ulaşabilirsiniz.
+      </p>
+        <p style="text-align:center; font-size:20px;"><u>Kredi Kalitesi</u></p>
+        <p style="margin:10px;">Geniş bir yelpazede sağlıklı bir dağılım gösteren kredi portföyü sayesinde kredi riski de makul bir düzeyde seyretmektedir. Tahsili gecikmiş alacakların kredilere oranı yüzde 3
+dolayındadır. Bu oran ticari kredilerde yüzde 2,6, bireysel kredilerde yüzde 3,3 düzeyindedir. </p>
+      <p style="text-align:center; font-size:20px;"><u>Kredi Sözleşmesi</u></p>
+      <p style="margin:10px;">
+        Üye işyeri sözleşmesi, kredi kurumu ile satıcı veya sağlayıcı arasında
+akdedilen bir çerçeve bir sözleşme olup tek başına ekonomik birliğin bir göstergesi
+değildir. Zira üye işyeri sözleşmesi, üye işyerinin nakit talep etmeksizin kredi kartını
+kendi iş yerinde bir ödeme aracı olarak kabul etmeyi taahhüt ettiği, buna karşılık kart
+çıkaran kuruluşun da kredi kartı sahibinin üye işyerinden yaptığı harcamaları üye
+işyerine ödemeyi taahhüt ettiği bir sözleşmedir. Böylelikle kart sahibi tüketici, sahip
+olduğu kredi kartını kullanarak, dilediği bir üye iş yeri yerinden dilediği mal veya
+hizmeti temin edebilme imkanı yakalamaktadır. Bu yönüyle kredi kartı, kural olarak,
+kart sahibinin herhangi bir nakit ödeme yapmaksızın mal veya hizmeti temin
+edebilmesini sağlayan bir ödeme aracı işlevi görmektedir77.
+Kredi kartının olağan işleyişinde kart hamili tüketici, tedarik edeceği mal
+veya hizmeti dilediği gibi belirlemekte ve söz konusu mal veya hizmeti tedarik
+edeceği satıcı veya sağlayıcıyı da serbestçe belirlemektedir. Çoğu durumda kart
+çıkaran kuruluş ile üye işyeri arasında bir ekonomik birliğin varlığından söz
+edilemez78. Dolayısıyla önceden var olan bir ilişkiye dayalı olarak kredinin
+münhasıran o üye işyerinden mal veya hizmet temin eden tüketicilere kullandırılması
+şart koşulmadığı sürece bağlı işlemin varlığından söz edilemeyecektir. 
+      </p>
+      <p style="text-align:center;font-size:20px;"><u>Üyelerden Beklentiler</u></p>
+        <p style="margin:10px;">Bireysel müşteriler ile ilişkilerde, üyelerimizden beklentimiz, düzenleme ve ilke kararlarına titizlikle uymaları, müşteri şikayetlerini kendi bünyelerinde değerlendirmeleri ve
+çözüme kavuşturmalarıdır. Bireysel müşteriler ile yaşanan ihtilaflarına Birlik üzerinden bir
+çözüm bulunmasını beklemek hem gerçekçi hem de mümkün değildir.  </p>
+      </p>
+      <div style="width:30%; margin-left: 75%;"><img src="https://www.freeiconspng.com/uploads/orange-check-tick-icon-14.png"></div>
+    </div>
+    <div class="right_part">
+      <div class="right_part_boxes">
+        <img src="https://img.freepik.com/premium-vector/man-avatar-profile-round-icon_24640-14044.jpg?w=2000" style="height:100px; width:100px;">
+        <div id="user"><p style="text-align:center;">MATT SMITH<br>Tel:....<br>E-mail:....</p>
+        </div>
+      </div>
+      <div class="right_part_boxes">
+        <div id="user"><p style="text-align:center;font-size:20px;">381,56 TL</p>            
+        </div>
+        <p style="text-align:center;margin:auto;"><img src="https://hdclipartall.com/images/wallet-clipart-open-wallet-clipart-290x160.jpg"></p>
+      </div>
+      <div class="right_part_boxes">
+        <p style="margin:auto;"> SON YAPILANLAR </p>
+        <div id="user"><br></div>
+        <div id="user"><br></div>
+        <div id="user"><br></div>
+      </div>
+    </div>
+  </div>
+  <div class="under_box">
+    <div style="display:flex"><div class="under_box_boxes">
+      <p>Youtube kanalımız:</p>
+      <a href="https://www.youtube.com/">
+Youtube</a></div>
+    <div class="under_box_boxes">
+      <p style="text-align:center;">Paranız Bizimle Güvende</p>
+    </div>
+    <div class="under_box_boxes">
+      <p>İnstagram sayfamız:</p>
+    <a href="https://www.instagram.com/?hl=tr">
+      İnstagram</a></div></div>
+    <div><footer><p style="text-align:center;">@CENG-BANK COPY RIGHT</p></footer></div>
+    </div>  
+  </div>
+
+</body>
+</html>
