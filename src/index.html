@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>Student Management System</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+  border: 2px solid #222222;
+  color: white;
+  background-color: #222222;
+  padding: 10px;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #555;
+}
+
+table {
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  border: 2px solid #333; 
+  border-radius: 20px; 
+  width: 100%; 
+}
+
+th, td {
+  padding: 10px;
+  text-align: left; 
+  font-size: 14px; 
+}
+
+th {
+  background-color: #333; 
+  color: #fff; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+td {
+  border-top: 1px solid #ccc; 
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+/* Add a hover effect to the rows */
+tr:hover {
+  background-color: #eee;
+} 
+#tableContainer {
+  margin: 1em auto;
+}
+
+    </style>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Student Management System</h1>
+
+    <h2>Create a Lecture</h2>
+    <form>
+      <label for="coursecode">Course Code:</label><br>
+      <input type="text" id="coursecode" name="coursecode"><br>
+      <label for="coursename">Course Name:</label><br>
+      <input type="text" id="coursename" name="coursename"><br>
+      <label for="teacher">Teacher:</label><br>
+      <input type="text" id="teacher" name="teacher"><br>
+      <label for="pointScale">Point Scale:</label><br>
+  <select id="pointScale" name="pointScale">
+    <option value="choose"></option>
+    <option value="7">7</option>
+    <option value="10">10</option>
+  </select><br><br>
+      <input type="button" value="Create" onclick="addLectureInput()">
+    </form>
+
+    <h2>Create a Student</h2>
+    <form>
+      <label for="studentid">Student ID:</label><br>
+      <input type="number" id="studentid" name="studentid"><br>
+      <label for="studentname">Student Name:</label><br>
+      <input type="text" id="studentname" name="studentname"><br>
+      <input type="button" value="Create" onclick="addStudentInput()">
+    </form>
+
+    <h2>Register a Student for a Lecture</h2>
+    <form>
+      <label for="lectureOptions">Choose a lecture:</label><br>
+      <select id="lectureOptions"></select><br>
+      <label for="studentOptions">Choose a student:</label><br>
+      <select id="studentOptions"></select><br>
+      <label for="midterm">Midterm grade:</label><br>
+      <input type="text" id="midterm" name="midterm"><br>
+      <label for="final">Final grade:</label><br>
+      <input type="text" id="final" name="final"><br>
+      <input type="button" value="Register" onclick="register()">
+    </form>
+    
+  <div id="tableContainer"></div>
+    
+    
+    
+    
+    </body>
+  
+</html>
